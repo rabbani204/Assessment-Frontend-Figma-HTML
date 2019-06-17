@@ -1,0 +1,134 @@
+ body {
+     font-family: 'Nunito', sans-serif;
+ }
+
+ .main-section {
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     overflow: hidden;
+ }
+
+ h2 {
+     color: #223766;
+ }
+
+ .section-1 p {
+     font-size: 14px;
+     color: #304980e1;
+ }
+
+ .section-2 a {
+     margin: 5px;
+ }
+
+ .section-2 a i {
+     font-size: 20px;
+     color: #223766;
+ }
+
+ .btn {
+     color: #ffffff;
+     font-size: 14px;
+     border-radius: 16px;
+     background: #0099CC;
+     padding-left: 25px;
+     padding-right: 25px;
+     transition: 0.4s;
+     border: 1px solid #ffffff;
+     margin-top: 15px;
+ }
+
+ .btn:hover {
+     color: #444;
+     background: none;
+     border: 1px solid #0099CC;
+ }
+
+ @media(max-width: 576px) {
+     #mobile-navtop a i {
+         color: #ffffff;
+     }
+     .rectangle {
+         width: 250px;
+         height: 250px;
+         border-radius: 16px;
+         background: #0099CC;
+         position: absolute;
+         top: 0;
+         right: -150px;
+         -ms-transform: rotate(40deg);
+         -webkit-transform: rotate(40deg);
+         transform: rotate(40deg);
+     }
+     .section-1 {
+         margin-top: 45vh;
+         left: 25px;
+         padding: 20px;
+     }
+     .section-1 h2 {
+         font-size: 23px;
+     }
+     .section-2 {
+         position: absolute;
+         bottom: 20px;
+         left: 20px;
+     }
+ }
+
+ @media(min-width: 576px) {
+     #mobile-navtop a i {
+         color: #33b5e5;
+     }
+     .rectangle {
+         width: 450px;
+         height: 600px;
+         border-radius: 16px;
+         background: #0099CC;
+         position: absolute;
+         bottom: -20px;
+         right: -280px;
+         -ms-transform: rotate(40deg);
+         -webkit-transform: rotate(40deg);
+         transform: rotate(40deg);
+     }
+     .section-1 {
+         margin-top: 20vh;
+         padding-left: 60px;
+         width: 60%;
+     }
+     .section-2 {
+         position: absolute;
+         bottom: 40px;
+         left: 40px;
+     }
+ }
+
+ @media(min-width: 768px) {
+     .section-2 {
+         position: absolute;
+         bottom: 60px;
+         left: 60px;
+     }
+ }
+
+ @media(min-width: 992px) {
+     .rectangle {
+         width: 800px;
+         height: 100%;
+         border-radius: 16px;
+         background: #0099CC;
+         position: absolute;
+         right: -350px;
+         bottom: 10%;
+         -ms-transform: rotate(40deg);
+         -webkit-transform: rotate(40deg);
+         transform: rotate(40deg);
+     }
+     .section-1 {
+         width: 55%;
+         margin-top: 30vh;
+         padding-left: 60px;
+         padding-right: 120px;
+     }
+ }

@@ -1,0 +1,105 @@
+/* Desktop View */
+
+#navbar {
+    overflow: hidden;
+    padding: 25px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0);
+}
+
+.navbar a {
+    color: #444;
+    font-weight: 400;
+}
+
+#logo img {
+    width: 45px;
+    height: 35px;
+}
+
+#mobile-logo img {
+    width: 45px;
+    height: 35px;
+}
+
+@media(max-width: 992px) {
+    #navbar {
+        display: none;
+    }
+    /* Mobile View */
+    .nav {
+        margin-left: 0;
+        transition: 0.4s;
+        padding: 20px 30px;
+        background: rgba(0, 0, 0, 0);
+    }
+    .nav h4 {
+        color: #444;
+    }
+    .nav a {
+        cursor: pointer;
+    }
+    .mobile-nav {
+        top: 0;
+        width: 0;
+        background: #ffffff;
+        height: 100vh;
+        position: fixed;
+        overflow: hidden;
+        z-index: 99;
+        transition: 0.4s;
+    }
+    .mobile-nav .closeNav {
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .mobile-nav .closeNav a {
+        padding: 10px;
+    }
+    .mobile-nav .list-group-item {
+        border: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.4s;
+        padding-top: 12px;
+        padding-left: 30px;
+        border-radius: 0px;
+        padding-bottom: 12px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    .mobile-nav .list-group-item:hover {
+        text-decoration: none;
+        background: rgba(68, 68, 68, 0.178);
+    }
+    /* Mobile View */
+}
+
+@media(min-width: 992px) {
+    .mobile-nav {
+        display: none;
+    }
+    #navbar {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    #navbar li a {
+        color: #444;
+        transition: 0.3s;
+        padding: 3px 15px;
+        font-size: 14px;
+        margin-left: 5px;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+    #navbar li a:hover {
+        color: #3b5998;
+        border: 1px solid #3b5998;
+        border-radius: 16px;
+    }
+    .nav {
+        display: none;
+    }
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".../../CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href=".../../CSS/style.css">
+	<link rel="stylesheet" href=".../../CSS/navbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">
+	
+    <title>Augmedix</title>
+	<link rel="icon" href=".../../assets/logo.png">
+	<script>
+	function myFunction(args){
+		swal("You Have Clicked " + args)
+	} 
+	</script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a class="navbar-brand" href="#" id="logo"><img src=".../../assets/logo.png" alt="Company Logo"></a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav mr-auto">
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('Remote scribe')">Remote scribe</a></li>
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('For providers')">For providers</a></li>
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('Updates')">Updates</a></li>
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('About')">About</a></li>
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('Contact')">Contact</a></li>
+                <li><a class="nav-item nav-link" href="#" onClick="myFunction('Request demo')">Request demo</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <ul class="nav fixed-top shadow-none" id="mobile-navtop">
+        <a class="mb-0" id="mobile-logo"><img src=".../../assets/logo.png" alt="Company Logo"></a>
+        <a class="ml-auto" onclick="openNav()"><i class="fas fa-bars"></i></a>
+    </ul>
+
+
+    <div class="mobile-nav shadow" id="mySidenav">
+        <div class="text-right">
+            <a class="closeNav px-3 py-2" onclick="closeNav()">&times;</a>
+        </div>
+        <ul class="list-group">
+            <li><a class="list-group-item" href="#" onClick="myFunction('Remote scribe')">Remote scribe</a></li>
+            <li><a class="list-group-item" href="#" onClick="myFunction('For providers')">For providers</a></li>
+            <li><a class="list-group-item" href="#" onClick="myFunction('Updates')">Updates</a></li>
+            <li><a class="list-group-item" href="#" onClick="myFunction('About')">About</a></li>
+            <li><a class="list-group-item" href="" onClick="myFunction('Contact')">Contact</a></li>
+            <li><a class="list-group-item" href="#" onClick="myFunction('Request demo')">Request demo</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="main-section">
+        <div class="rectangle"></div>
+
+
+        <div class="section-1">
+            <h2>Rehumanizing Healthcare</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            </p>
+            <button type="button" class="btn py-1 shadow-none">Small button</button>
+        </div>
+
+
+        <div class="section-2">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+
+
+    <script src=".../../JS/popper.min.js"></script>
+    <script src=".../../JS/bootstrap.min.js"></script>
+    <script src=".../../JS/jquery-3.3.1.slim.min.js"></script>
+	<script src=".../../JS/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+
+</body>
+
+</html>
